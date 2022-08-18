@@ -243,15 +243,15 @@ reduce的高阶用法：https://juejin.cn/post/6844904063729926152#heading-20
 
 ##### 1.2.3.12、Array.prototype.keys()
 
-​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键名
+​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键名，可使用for...of对其遍历
 
 ##### 1.2.3.13、Array.prototype.values()
 
-​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键值
+​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键值，可使用for...of对其遍历
 
 ##### 1.2.3.14、Array.prototype.entries()
 
-​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键-值对
+​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键-值对，可使用for...of对其遍历
 
 
 
