@@ -1,0 +1,48 @@
+<!-- 关于this的总结 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>this</title>
+</head>
+<body>
+  <script>
+    // 全局环境
+    console.log(this) // ===> 这里的this始终指向window
+
+    // 局部环境
+    // 1、在全局作用域下直接调用函数，this指向window
+    // 注：在严格模式下的函数的this得到的是undefined
+    function a() {
+      console.log(this) // ===> 这里的this始终指向window
+    }
+    a()
+
+    // 2、对象函数调用，哪个对象调用就指向哪个对象
+    let obj = {
+      age: 20,
+      func1: function() {
+        console.log(this) // ===> 这里的this指向obj
+      },
+      obj1: {
+        name: '123',
+        func2: function() {
+          console.log(this) // ===> 这里的this指向obj1
+        }
+      }
+    }
+    obj.func1()
+    obj.obj1.func2()
+
+    // 3、new实例化对象，构造函数中的this指向实例对象
+    let Person = function() {
+      this.name = '小刘' // ===> 这里的this指向people
+    }
+    const people = new Person()
+    people.age = 20
+
+  </script>
+</body>
+</html>
