@@ -78,7 +78,7 @@ Object.prototype.toString.call(arr) === '[object Array]' // true
 
 ##### 1.2.1.1、Array.prototype.splice()
 
-​		通过添加/删除/替换元素修改数组，并返回修改后的原数组
+​		<span style="color: red">通过添加/删除/替换元素修改数组</span>
 
 ​		参数一：开始位置
 
@@ -86,9 +86,11 @@ Object.prototype.toString.call(arr) === '[object Array]' // true
 
 ​		参数三（可选 && 多个）：所要添加的元素
 
+​		<span style="color: blue">返回值：修改后的原数组</span>
+
 ##### 1.2.1.2、Array.prototype.sort()
 
-​		通过对数组元素的比较进行排序，并返回修改后的原数组。
+​		<span style="color: red">通过对数组元素的比较进行排序</span>
 
 ​		在没有参数时，默认按照字母排序，如果不是字符串时，会调用toString方法，将元素转化为字符串的Unicode位点，再进行比较。
 
@@ -105,29 +107,41 @@ sort内部传入参数为(a, b) => a - b 表示升序;
 
 ​		参数：回调函数（两个参数，a表示next，b表示before）
 
+​		<span style="color: blue">返回值：修改后的原数组</span>
+
 ##### 1.2.1.3、Array.prototype.pop()
 
-​		删除数组末尾一个元素，返回的是所删除的值
+​		<span style="color: red">删除数组末尾一个元素</span>
+
+​		<span style="color: blue">返回值：被删除的那个值</span>
 
 ##### 1.2.1.4、Array.prototype.push()
 
-​		在数组末尾添加一个或多个元素，并返回数组当前长度
+​		<span style="color: red">在数组末尾添加一个或多个元素</span>
+
+​		<span style="color: blue">返回值：返回数组修改后的长度(Array.length)</span>
 
 ##### 1.2.1.5、Array.prototype.shift()
 
-​		删除数组第一个元素，并返回当前所删除的值
+​		<span style="color: red">删除数组第一个元素</span>
+
+​		<span style="color: blue">返回值：被删除的那个值</span>
 
 ##### 1.2.1.6、Array.prototype.unshift()
 
-​		在数组头部添加一个或多个元素，返回当前这个数组的长度
+​		<span style="color: red">在数组头部添加一个或多个元素</span>
+
+​		<span style="color: blue">返回值：返回数组修改后的长度(Array.length)</span>
 
 ##### 1.2.1.7、Array.prototype.reverse()
 
-​		反转数组元素，并返回修改后的原数组
+​		<span style="color: red">反转数组元素</span>
+
+​		<span style="color: blue">返回值：返回修改后的原数组</span>
 
 ##### 1.2.1.8、Array.prototype.copyWithin()
 
-​		ES6新增api，将指定数组元素复制到指定位置覆盖原数组元素，并返回修改后的原数组
+​		<span style="color: red">ES6新增api，将指定数组元素复制到指定位置覆盖原数组元素</span>
 
 ​		参数一：复制的位置
 
@@ -135,17 +149,21 @@ sort内部传入参数为(a, b) => a - b 表示升序;
 
 ​		参数三：所要拷贝元素的最终位置（可负数）
 
+​		<span style="color: blue">返回值：返回修改后的原数组</span>
+
 ​		注：第二个参数和第三个参数可看作左闭右开
 
 ##### 1.2.1.9、Array.prototype.fill()
 
-​		ES6新增api，填充数组，返回修改后的原数组
+​		<span style="color: red">ES6新增api，填充数组</span>
 
 ​		参数一：用来填充数组元素的值
 
 ​		参数二（可选）：填充的起始位置（默认0）
 
 ​		参数三（可选）：填充的终止位置（默认this.length）
+
+​		<span style="color: blue">返回值：返回修改后的原数组</span>
 
 ​		注：第二个参数和第三个参数可看作左闭右开
 
@@ -157,61 +175,104 @@ sort内部传入参数为(a, b) => a - b 表示升序;
 
 ##### 1.2.2.1、Array.prototype.slice()
 
-​		浅拷贝指定长度的数组，返回拷贝后的新数组
+​		<span style="color: red">浅拷贝指定长度的数组</span>
 
 ​		参数一：拷贝元素的起始位置
 
 ​		参数二：拷贝元素的最终位置
 
+​		<span style="color: blue">返回值：返回拷贝后的新数组</span>
+
 ​		注：第一个参数和第二个参数可看作左闭右开
 
 ##### 1.2.2.2、Array.prototype.join()
 
-​		将一个数组/类数组对象的所有的元素通过传入的参数连接成一个字符串，不传入参数时使用"**,**"将其分隔，返回一个字符串
+​		<span style="color: red">将一个数组/类数组对象的所有的元素通过传入的参数连接成一个字符串，不传入参数时使用"**,**"将其分隔，返回一个字符串</span>
 
 ​		参数（可选）：将数组的元素通过此参数全部连接在一起，如果数组为空数组的话，则返回一个空字符串
 
+​		<span style="color: blue">返回值：字符串/空字符串</span>
+
 ##### 1.2.2.3、Array.prototype.toString()
 
-​		将数组元素转换成字符串
+​		<span style="color: red">将数组元素转换成字符串</span>
+
+​		<span style="color: blue">返回值：字符串</span>
 
 ##### 1.2.2.4、Array.prototype.toLocaleString()
 
-​		将数组元素转换成字符串，而转换过程中会将数组中的元素使用各自的toLocaleString() 转换成对应的字符串
+​		<span style="color: red">将数组元素转换成字符串，而转换过程中会将数组中的元素使用各自的toLocaleString() 转换成对应的字符串</span>
+
+​		<span style="color: blue">返回值：字符串</span>
 
 ##### 1.2.2.5、Array.prototype.indexOf()
 
-​		通过传入元素值来找到数组对应第一个元素值的索引值，未找到则返回-1。第二个参数表示从数组元素的第几个元素开始寻找
+​		<span style="color: red">通过传入元素值来找到数组对应第一个元素值的索引值，未找到则返回-1。</span>
+
+​		参数一：要查找的元素值
+
+​		参数二（可选）：表示从数组元素的第几个元素开始寻找
+
+​		<span style="color: blue">返回值：首个被找到元素在数组中的索引值，没有找到返回-1</span>
 
 ##### 1.2.2.6、Array.prototype.lastIndexOf()
 
-​		通过传入元素值从数组末尾开始找到数组相对应第一个元素值的索引值，未找到则返回-1。第二个参数表示从数组末尾第几个元素开始找
+​		<span style="color: red">通过传入元素值从数组末尾开始找到数组相对应第一个元素值的索引值，未找到则返回-1。</span>
+
+​		参数一： 要查找的元素值	
+
+​		参数二（可选）：表示从数组元素从数组末尾的第几个元素开始寻找
+
+​		<span style="color: blue">返回值：该元素在数组中最后一次出现的索引值，没有找到返回-1</span>
 
 ##### 1.2.2.7、Array.prototype.concat()
 
-​		合并两个或多个数组，返回一个新的数组
+​		<span style="color: red">合并两个或多个数组</span>
+
+​		<span style="color: blue">返回值：新的数组</span>
 
 ##### 1.2.2.8、Array.prototype.includes()
 
-​		ES7新增api，通过传入元素值来判断数组中是否包含该元素，返回一个boolean值，第二个参数表示从数组第几个元素开始寻找
+​		<span style="color: red">ES7新增api，通过传入元素值来判断数组中是否包含该元素，返回一个boolean值</span>
+
+​		参数一：需要查找的元素值
+
+​		参数二（可选）：表示从数组下标的第几位开始找
+
+​		<span style="color: blue">返回值：boolean值</span>
 
 ​		它能够寻找NaN元素，能够弥补indexOf()不能查找NaN的缺陷。
 
 ##### 1.2.2.9、Array.prototype.flat()
 
-​		ES6新增api，该方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回
+​		<span style="color: red">ES6新增api，该方法会按照一个可指定的深度递归遍历数组，并将所有元素与遍历到的子数组中的元素合并为一个新数组返回</span>
 
-##### 1.2.2.10、Array.prototype.flatMap()
+​		参数（可选）：指定要提取嵌套数组的结构深度，默认值为 1。
 
-​		ES6新增api，该方法首先使用映射函数映射每个元素，然后将结果压缩成一个新数组。可以将其看作是map和深度为1的flat的结合体。
+​		<span style="color: blue">返回值：新的扁平化后的数组</span>
+
+##### 1.2.2.10、Array.prototype.keys()
+
+​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键名，可使用for...of对其遍历
+
+##### 1.2.2.11、Array.prototype.values()
+
+​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键值，可使用for...of对其遍历
+
+##### 1.2.2.12、Array.prototype.entries()
+
+​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键-值对，可使用for...of对其遍历
+
+
 
 #### 1.2.3、数组遍历的方法
 
-以下api遵循规则：
+<span style="color: red">以下api遵循规则：</span>
 
-- 空数组不执行回调函数
-- 当遇到空元素时，会跳过此次回调函数
-- 遍历的次数在第一次进入循环时就会确认，再添加进入数组的元素不再参与遍历
+- <span style="color: red">空数组不执行回调函数</span>
+- <span style="color: red">当遇到空元素时，会跳过此次回调函数</span>
+- <span style="color: red">遍历的次数在第一次进入循环时就会确认，再添加进入数组的元素不再参与遍历</span>
+- <span style="color: red">以下参数全部一致，参数一代表callback，callback中接三个参数，分别代表当前元素，当前元素下标（可选），当前数组（可选），参数二代表执行当前callback函数的this值</span>
 
 ##### 1.2.3.1、Array.prototype.forEach()
 
@@ -265,17 +326,15 @@ reduce的高阶用法：https://juejin.cn/post/6844904063729926152#heading-20
 
 ​		ES2022新增api，用于找到第一个符合条件的数组成员（从右至左），并返回该元素的相应位置，如果没有数组满足条件的元素，则返回-1
 
-##### 1.2.3.12、Array.prototype.keys()
+##### 1.2.3.12、Array.prototype.flatMap()
 
-​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键名，可使用for...of对其遍历
+​		<span style="color: red">ES6新增api，该方法首先使用映射函数映射每个元素，然后将结果压缩成一个新数组。可以将其看作是map和深度为1的flat的结合体。</span>
 
-##### 1.2.3.13、Array.prototype.values()
+​		参数一：callback函数（参数类似于forEach）
 
-​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键值，可使用for...of对其遍历
+​		参数二（可选）：执行callback函数时使用的this值
 
-##### 1.2.3.14、Array.prototype.entries()
-
-​		该方法返回一个新的Array Iterator对象，该对象包含数组中每个索引的键-值对，可使用for...of对其遍历
+​		<span style="color: blue">返回值：新的扁平化数组</span>
 
 
 
